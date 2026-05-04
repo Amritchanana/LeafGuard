@@ -14,7 +14,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app.config['MAX_CONTENT_LENGTH'] = 5 * 1024 * 1024  # 5MB limit
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
-model = load_model('model_savedmodel')
+model = load_model('model.keras')
 
 labels = {0: 'Healthy', 1: 'Powdery', 2: 'Rust'}
 
