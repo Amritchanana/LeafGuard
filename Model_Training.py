@@ -124,7 +124,7 @@ plt.show()
 
 
 print("Saving model... Please wait.")
-model.save("model.h5")
+model.export("model_savedmodel")
 print("Model saved successfully!")
 
 
